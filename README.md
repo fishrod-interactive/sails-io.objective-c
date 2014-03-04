@@ -25,9 +25,9 @@ _socket = [[SocketIO alloc] initWithDelegate:self];
 * Disable authorisation in config/sockets.js in your Sails project, otherwise you won't be able to connect
 * All events will come through the usual Socket.IO-objc event delegates
 
-To have a play just check out the app 
+To have a play just check out the FRViewController
 
-
+** MAKE SURE YOUR SOCKET IS A STRONG POINTER! **
 
 # ToDO
 [--] - Turn into CocoaPod
