@@ -9,13 +9,19 @@ Sails.IO wrapper port for Objective-C so that you can interact with Sails bluepr
 # Usage
 * Include ```#import "SocketIO+SailsIO.h"```
 * Connect to your Sails server
-* ```_socket = [[SocketIO alloc] initWithDelegate:self];
+
+```
+_socket = [[SocketIO alloc] initWithDelegate:self];
     [_socket connectToHost:@"localhost" onPort:1337];    
 ```
 * Make a get request
-* ```[_socket get:@"/user" withData:nil callback:^(id response) {
+
+```
+[_socket get:@"/user" withData:nil callback:^(id response) {
         NSLog(@"Records: %@", response);
-    }];```
+}];
+```
+
 * Disable authorisation in config/sockets.js in your Sails project, otherwise you won't be able to connect
 * All events will come through the usual Socket.IO-objc event delegates
 
