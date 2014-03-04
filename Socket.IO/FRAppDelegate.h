@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketIO+SailsIO.h"
 
-@interface FRAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FRAppDelegate : UIResponder <UIApplicationDelegate, SocketIODelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

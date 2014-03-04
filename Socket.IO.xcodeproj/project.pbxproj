@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2718DB0CC9496E8E9B0397 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32808EE3F8FA4EF4BD644E3D /* libPods.a */; };
 		DD10165C18C67D950038B942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD10165B18C67D950038B942 /* Foundation.framework */; };
 		DD10165E18C67D950038B942 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD10165D18C67D950038B942 /* CoreGraphics.framework */; };
 		DD10166018C67D950038B942 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD10165F18C67D950038B942 /* UIKit.framework */; };
@@ -22,6 +23,9 @@
 		DD10168018C67D950038B942 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD10165F18C67D950038B942 /* UIKit.framework */; };
 		DD10168818C67D950038B942 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD10168618C67D950038B942 /* InfoPlist.strings */; };
 		DD10168A18C67D950038B942 /* Socket_IOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10168918C67D950038B942 /* Socket_IOTests.m */; };
+		DD10169618C67F4F0038B942 /* SocketIO+SailsIO.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10169518C67F4F0038B942 /* SocketIO+SailsIO.m */; };
+		DD10169A18C688400038B942 /* NSString+TrimmingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10169918C688400038B942 /* NSString+TrimmingAdditions.m */; };
+		DD10169C18C692480038B942 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD10169B18C692480038B942 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1932EABA51C54C36A75A2778 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		32808EE3F8FA4EF4BD644E3D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD10165818C67D950038B942 /* Socket.IO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socket.IO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD10165B18C67D950038B942 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD10165D18C67D950038B942 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +61,11 @@
 		DD10168518C67D950038B942 /* Socket.IOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Socket.IOTests-Info.plist"; sourceTree = "<group>"; };
 		DD10168718C67D950038B942 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD10168918C67D950038B942 /* Socket_IOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Socket_IOTests.m; sourceTree = "<group>"; };
+		DD10169418C67F4F0038B942 /* SocketIO+SailsIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketIO+SailsIO.h"; sourceTree = "<group>"; };
+		DD10169518C67F4F0038B942 /* SocketIO+SailsIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SocketIO+SailsIO.m"; sourceTree = "<group>"; };
+		DD10169818C688400038B942 /* NSString+TrimmingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TrimmingAdditions.h"; sourceTree = "<group>"; };
+		DD10169918C688400038B942 /* NSString+TrimmingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TrimmingAdditions.m"; sourceTree = "<group>"; };
+		DD10169B18C692480038B942 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,7 @@
 				DD10165E18C67D950038B942 /* CoreGraphics.framework in Frameworks */,
 				DD10166018C67D950038B942 /* UIKit.framework in Frameworks */,
 				DD10165C18C67D950038B942 /* Foundation.framework in Frameworks */,
+				DB2718DB0CC9496E8E9B0397 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +96,13 @@
 		DD10164F18C67D950038B942 = {
 			isa = PBXGroup;
 			children = (
+				DD10169B18C692480038B942 /* README.md */,
+				DD10169318C67EF20038B942 /* sails-io */,
 				DD10166118C67D950038B942 /* Socket.IO */,
 				DD10168318C67D950038B942 /* Socket.IOTests */,
 				DD10165A18C67D950038B942 /* Frameworks */,
 				DD10165918C67D950038B942 /* Products */,
+				1932EABA51C54C36A75A2778 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,7 @@
 				DD10165D18C67D950038B942 /* CoreGraphics.framework */,
 				DD10165F18C67D950038B942 /* UIKit.framework */,
 				DD10167D18C67D950038B942 /* XCTest.framework */,
+				32808EE3F8FA4EF4BD644E3D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +171,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD10169318C67EF20038B942 /* sails-io */ = {
+			isa = PBXGroup;
+			children = (
+				DD10169418C67F4F0038B942 /* SocketIO+SailsIO.h */,
+				DD10169518C67F4F0038B942 /* SocketIO+SailsIO.m */,
+				DD10169818C688400038B942 /* NSString+TrimmingAdditions.h */,
+				DD10169918C688400038B942 /* NSString+TrimmingAdditions.m */,
+			);
+			name = "sails-io";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD10168D18C67D950038B942 /* Build configuration list for PBXNativeTarget "Socket.IO" */;
 			buildPhases = (
+				0F6F6917A27844C3A81B5BA1 /* Check Pods Manifest.lock */,
 				DD10165418C67D950038B942 /* Sources */,
 				DD10165518C67D950038B942 /* Frameworks */,
 				DD10165618C67D950038B942 /* Resources */,
+				499EE2B71FC34FCFB28D4EBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +263,7 @@
 			files = (
 				DD10167218C67D950038B942 /* Main_iPad.storyboard in Resources */,
 				DD10167718C67D950038B942 /* Images.xcassets in Resources */,
+				DD10169C18C692480038B942 /* README.md in Resources */,
 				DD10166F18C67D950038B942 /* Main_iPhone.storyboard in Resources */,
 				DD10166618C67D950038B942 /* InfoPlist.strings in Resources */,
 			);
@@ -249,14 +279,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F6F6917A27844C3A81B5BA1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		499EE2B71FC34FCFB28D4EBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD10165418C67D950038B942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD10166C18C67D950038B942 /* FRAppDelegate.m in Sources */,
+				DD10169618C67F4F0038B942 /* SocketIO+SailsIO.m in Sources */,
 				DD10166818C67D950038B942 /* main.m in Sources */,
 				DD10167518C67D950038B942 /* FRViewController.m in Sources */,
+				DD10169A18C688400038B942 /* NSString+TrimmingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +455,7 @@
 		};
 		DD10168E18C67D950038B942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1932EABA51C54C36A75A2778 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,6 +469,7 @@
 		};
 		DD10168F18C67D950038B942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1932EABA51C54C36A75A2778 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -475,6 +542,7 @@
 				DD10168F18C67D950038B942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD10169018C67D950038B942 /* Build configuration list for PBXNativeTarget "Socket.IOTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +551,7 @@
 				DD10169218C67D950038B942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
