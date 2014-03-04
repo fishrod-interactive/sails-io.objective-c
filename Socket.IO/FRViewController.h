@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <socket.IO/SocketIOPacket.h>
+#import "SocketIO+SailsIO.h"
 
-@interface FRViewController : UIViewController
+@interface FRViewController : UIViewController<SocketIODelegate>
 
 @end

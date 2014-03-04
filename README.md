@@ -25,6 +25,10 @@ _socket = [[SocketIO alloc] initWithDelegate:self];
 * Disable authorisation in config/sockets.js in your Sails project, otherwise you won't be able to connect
 * All events will come through the usual Socket.IO-objc event delegates
 
+To have a play just check out the app 
+
+
 
 # ToDO
 [--] - Turn into CocoaPod
+[--] - Move from NSString to NSURL for request URL's... maybe

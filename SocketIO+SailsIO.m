@@ -11,6 +11,7 @@
 
 @implementation SocketIO (SailsIO)
 
+#pragma mark - Request convenience methods
 - (void) get:(NSString *)url withData:(NSDictionary *)data callback:(void (^)(id response))callback {
     [self request:url withData:data callback:callback method:@"get"];
 }
@@ -27,8 +28,10 @@
     [self request:url withData:data callback:callback method:@"delete"];
 }
 
+#pragma mark - Method that makes the actual request
 - (void) request:(NSString *)url withData:(NSDictionary *)data callback:(void (^)(id response))callback method:(NSString *)method {
     
+    // Trim any white spaces and / slashes from the end of the URL
     NSMutableCharacterSet *urlReplacementSet = [NSMutableCharacterSet whitespaceAndNewlineCharacterSet];
     [urlReplacementSet addCharactersInString:@"/"];
     
