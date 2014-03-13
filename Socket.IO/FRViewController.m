@@ -24,7 +24,7 @@
     
     _socket = [[SocketIO alloc] initWithDelegate:self];
     [_socket connectToHost:@"localhost" onPort:1337];
-    [_socket get:@"/user" withData:nil callback:^(id response) {
+    [_socket get:@"/player" withData:nil callback:^(id response) {
         NSLog(@"Response: %@", response);
     }];
     
