@@ -43,10 +43,7 @@
     NSDictionary *request = @{@"url": url, @"data": (data) ? data : [NSNull null]};
     
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:request options:0 error:nil];
-    NSString *json;
-    if(jsonData){
-        json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    }
+    NSString *json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
     if(json){
         
