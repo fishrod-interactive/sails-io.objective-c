@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Sails.IO"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A category for Socket.IO to support Sails.IO's GET, PUT, POST and DELETE socket requests"
 
   s.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/fishrod-interactive/sails-io.objective-c"
 
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'MIT-LICENSE.md' }
 
   s.author             = { "Gavin Williams" => "gavin.williams@fishrod.co.uk" }
 

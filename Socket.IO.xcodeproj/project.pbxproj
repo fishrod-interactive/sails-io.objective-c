@@ -26,6 +26,7 @@
 		DD10169C18C692480038B942 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD10169B18C692480038B942 /* README.md */; };
 		DDFE46FB18D231E700191A3F /* NSString+TrimmingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE46F818D231E700191A3F /* NSString+TrimmingAdditions.m */; };
 		DDFE46FC18D231E700191A3F /* SocketIO+SailsIO.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE46FA18D231E700191A3F /* SocketIO+SailsIO.m */; };
+		DDFE46FE18D2366C00191A3F /* MIT-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = DDFE46FD18D2366C00191A3F /* MIT-LICENSE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		DDFE46F818D231E700191A3F /* NSString+TrimmingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+TrimmingAdditions.m"; path = "Classes/NSString+TrimmingAdditions.m"; sourceTree = "<group>"; };
 		DDFE46F918D231E700191A3F /* SocketIO+SailsIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketIO+SailsIO.h"; path = "Classes/SocketIO+SailsIO.h"; sourceTree = "<group>"; };
 		DDFE46FA18D231E700191A3F /* SocketIO+SailsIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SocketIO+SailsIO.m"; path = "Classes/SocketIO+SailsIO.m"; sourceTree = "<group>"; };
+		DDFE46FD18D2366C00191A3F /* MIT-LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DD10164F18C67D950038B942 = {
 			isa = PBXGroup;
 			children = (
+				DDFE46FD18D2366C00191A3F /* MIT-LICENSE.md */,
 				DD10169B18C692480038B942 /* README.md */,
 				DD10169318C67EF20038B942 /* sails-io */,
 				DD10166118C67D950038B942 /* Socket.IO */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD10167218C67D950038B942 /* Main_iPad.storyboard in Resources */,
+				DDFE46FE18D2366C00191A3F /* MIT-LICENSE.md in Resources */,
 				DD10167718C67D950038B942 /* Images.xcassets in Resources */,
 				DD10169C18C692480038B942 /* README.md in Resources */,
 				DD10166F18C67D950038B942 /* Main_iPhone.storyboard in Resources */,
